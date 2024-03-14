@@ -1,3 +1,8 @@
+/**
+ * Doubt in this Entire Page of Zod Implementation and what to use exactly here
+ */
+
+
 import { z } from "zod";
 import { jobTypes, locationTypes } from "./job-types";
 
@@ -11,8 +16,8 @@ const companyLogoSchema = z
     "Must be an image file",
   )
   .refine((file) => {
-    return !file || file.size < 1024 * 1024 * 2;
-  }, "File must be less than 2MB");
+    return !file || file.size < 1024 * 1024 * 6;
+  }, "File must be less than 6MB");
 
 const applicationSchema = z
   .object({

@@ -1,9 +1,9 @@
-"use client";
+"use client"; //As it is a client compoment has to import props from the server components and cannot be used directly 
 
 import FormSubmitButton from "@/components/FormSubmitButton";
 import { Job } from "@prisma/client";
 import { useFormState } from "react-dom";
-import { approveSubmission, deleteJob } from "./actions";
+import { approveSubmission, deleteJob } from "./actions"; //Imported Both the Functions from the actions.ts file
 
 interface AdminSidebarProps {
   job: Job;

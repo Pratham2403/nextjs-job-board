@@ -20,7 +20,7 @@ export default forwardRef<Object, EditorProps>(
           props.editorClassName,
         )}
         toolbar={{
-          options: ["inline", "list", "link", "history"],
+          options: ["inline", "list", "link", "history", "emoji"],
           inline: {
             options: ["bold", "italic", "underline"],
           },

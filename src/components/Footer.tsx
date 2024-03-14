@@ -1,5 +1,5 @@
-import Link from "next/link";
-
+import Link from "next/link"
+//Standard Footer component can be used anywhere with basic changes in the UI
 export default function Footer() {
   return (
     <footer className="border-t">
@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="space-y-2">
             <h3 className="text-xl font-semibold">Flow Jobs</h3>
             <p className="text-sm text-muted-foreground">
-              Connecting talents with opportunities
+              Connecting the best talent with the best opportunities.
             </p>
           </div>
           <div className="flex flex-wrap gap-5 text-sm text-muted-foreground">
@@ -31,5 +31,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
